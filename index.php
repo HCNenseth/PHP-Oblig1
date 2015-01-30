@@ -31,7 +31,6 @@ and open the template in the editor.
                 $a += 3 - ($a % 3);
                 echo $a . " ";
             }
-
             $a++;
         }
         ?>
