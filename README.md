@@ -34,6 +34,7 @@ Bestilling av billetter på nettet.
 
 Vi ser på en liten del av et system som lar en bruker bestille billetter på nettet. Dette kan
 f.eks være kinobilletter. Det skal brukes en objektmodell for å løse oppgaven.
+
 Lag et skjema som kan ta i mot personalia for personen som ønsker å bestille billettene. I
 skjema skal det kunne skrives inn navn, telefonnummer og e-post adresse etc. Lag også en
 list-boks f.eks som lister opp ulike typer billetter. Lag så et felt som angir antall billetter
@@ -44,6 +45,7 @@ skjema. Dagens dato og tid skal også vises på denne siden. Her skal man bekref
 bestilingsinformasjonen før en ny knapp trykkes. Informasjonen skal deretter lagres på fil
 og en bekreftelse sendes som e-post til personen som har bestilt. Dersom kunden ønsker å
 avbryte bestillingen skal dette gjøres på denne bekreftelsessiden.
+
 Objektmodell: Lag minimum to klasser, en for kunden og en for bestillingen. Disse skal så
 ha alle nødvendige attributter og metoder (funksjoner) for å kunne motta dataene fra
 skjema, sende e-post og lagre bestillingen på fil.
