@@ -4,13 +4,16 @@ Enkel introduksjon til PHP
 Oppgave 1
 
 a) Lag et PHP script som lister ut alle tall som er delelige med 3 opp til 100. Bruk en for-løkke.
+
 b) Lag samme utskrift som over med en while-løkke.
+
 c) Finn så gjennomsnittet av de samme tallene (de som er delelig med 3 opptil 100).
+
 
 Oppgave 2
 
-Gitt tallrekken: 1,4,8,1,4,10,5,6,2,4,6. Opprett et array for denne rekken av tall. Bruk så dette
-arrayet til:
+Gitt tallrekken: 1,4,8,1,4,10,5,6,2,4,6. Opprett et array for denne rekken av tall. Bruk så dette arrayet til:
+
 a) Skriv ut alle tallene som er over 5.
 b) Tell opp hvor mange tall som er over 5 og vis dette.
 c) Liste ut tallene baklengs.
