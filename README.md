@@ -15,10 +15,15 @@ Oppgave 2
 Gitt tallrekken: 1,4,8,1,4,10,5,6,2,4,6. Opprett et array for denne rekken av tall. Bruk så dette arrayet til:
 
 a) Skriv ut alle tallene som er over 5.
+
 b) Tell opp hvor mange tall som er over 5 og vis dette.
+
 c) Liste ut tallene baklengs.
+
 d) Finn det minste tallet ved en løkke. Skriv så tallet ut.
+
 e) Finn det minste tallet ved en PHP funksjon. Skriv så tallet ut.
+
 f) Lag så egendefinerte funksjoner med en innparameter for oppgave a) og b). Parameteren inn
 skal angi tallet som skal testes på i oppgavene. Funksjonene skal returnere verdier (tips, bruk
 et array i oppgave a).
