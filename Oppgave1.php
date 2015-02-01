@@ -52,5 +52,6 @@
         echo "Summen av alle de " . $n . " tallene som er delelig med 3, fra 1 opp til 100, er  " . $m .
         ". </br>Gjennomsnittet av disse tallene er " . $m / $n;
         ?>
+        
     </body>
 </html>
