@@ -21,27 +21,30 @@
             Funksjonene skal returnere verdier (tips, bruk et array i oppgave a).</br> </p>
 
         <?php
-        $i = 0;
         $tall = array(1, 4, 8, 1, 4, 10, 5, 6, 2, 4, 6);
 
         echo "<h5>a) Tall større enn 5 i arrayet</h5>";
-
         foreach ($tall as $value) {
             if ($value > 5) {
                 echo $value . " ";
+            }
+        }
+
+
+        echo "<h5>b) Hvor mange tall er større enn 5 i arrayet</h5>";
+        $i = 0;
+        foreach ($tall as $value) {
+            if ($value > 5) {
                 $i++;
             }
         }
-        echo "<h5>b) Hvor mange tall er større enn 5 i arrayet</h5>";
         echo "Tabellen inneholder " . $i . " tall som er større enn 5.</br>";
 
-        echo "<h5>c) Arreyen i omvendt rekkefølge</h5>";
 
+        echo "<h5>c) Arreyen i omvendt rekkefølge</h5>";
         for ($j = count($tall) - 1; $j >= 0; $j--) {
             echo $tall[$j] . " ";
         }
-        
-        
         ?>
     </body>
 </html>
