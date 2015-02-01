@@ -55,6 +55,13 @@
             }
         }
         echo "Minste tall i arreyen er " . $n;
+
+
+        echo "<h5>e) Minste tallet i arreyen ved hjelp av PHP-funksjon</h5>";
+        echo "En enklere måte å finne minste tallet på er ved funksjonen min(Array) som gir " . min($tall) . " i dette tilfellet.";
+
+
+        echo "<h5>f) Egne funksjoner for oppgave a) og b)</h5>";
         ?>
     </body>
 </html>
