@@ -32,19 +32,29 @@
 
 
         echo "<h5>b) Hvor mange tall er større enn 5 i arrayet</h5>";
-        $i = 0;
+        $a = 0;
         foreach ($tall as $value) {
             if ($value > 5) {
-                $i++;
+                $a++;
             }
         }
-        echo "Tabellen inneholder " . $i . " tall som er større enn 5.</br>";
+        echo "Tabellen inneholder " . $a . " tall som er større enn 5.</br>";
 
 
         echo "<h5>c) Arreyen i omvendt rekkefølge</h5>";
         for ($j = count($tall) - 1; $j >= 0; $j--) {
             echo $tall[$j] . " ";
         }
+
+
+        echo "<h5>d) Minste tallet i arreyen ved hjelp av løkke</h5>";
+        $n = $tall[rand(0, count($tall) - 1)];
+        for ($i = 0; $i < count($tall); $i++) {
+            if ($n > $tall[$i]) {
+                $n = $tall[$i];
+            }
+        }
+        echo "Minste tall i arreyen er " . $n;
         ?>
     </body>
 </html>
