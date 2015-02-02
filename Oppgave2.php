@@ -41,7 +41,7 @@
         echo "Tabellen inneholder " . $a . " tall som er større enn 5.</br>";
 
 
-        echo "<h5>c) Arreyen i omvendt rekkefølge</h5>";
+        echo "<h5>c) Arrayen i omvendt rekkefølge</h5>";
         for ($j = count($tall) - 1; $j >= 0; $j--) {
             echo $tall[$j] . " ";
         }
@@ -62,6 +62,33 @@
 
 
         echo "<h5>f) Egne funksjoner for oppgave a) og b)</h5>";
+        $in = 6;
+
+        function biggerThan($in) {
+            $tall = array(1, 4, 8, 1, 4, 10, 5, 6, 2, 4, 6);
+            foreach ($tall as $value) {
+                if ($value > $in) {
+                    echo $value . " ";
+                }
+            }
+        }
+
+        echo "Verdiene større enn en gitt innverdi, i dette tilfelle " . $in . ", gir</br>";
+        biggerThan($in);
+        echo "</br>";
+
+        function numberBiggerThan($in) {
+            $b = 0;
+            $tall = array(1, 4, 8, 1, 4, 10, 5, 6, 2, 4, 6);
+            foreach ($tall as $value) {
+                if ($value > $in) {
+                    $b++;
+                }
+            }
+            return $b;
+        }
+
+        echo "Tabellen inneholder " . numberBiggerThan($in) . " tall som er større enn " . $in . "</br>";
         ?>
     </body>
 </html>
