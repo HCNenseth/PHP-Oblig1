@@ -27,7 +27,21 @@
             ha alle nødvendige attributter og metoder (funksjoner) for å kunne motta dataene fra
             skjema, sende e-post og lagre bestillingen på fil.</br>
         </p>
+        
+        <form action="test.php" method="post">
+            Name :</br>
+            <input type="text" name="name_id" /></br>
+            Phonenumber :</br>
+            <input type="text" name="phone" /></br>
+            e-mail :</br>
+            <input type="text" name="phone" /></br>
+            <input type="submit" value="Register" name="button" />
+            
+        </form>
+        
         <?php
+        
+        
         ?>
     </body>
 </html>
