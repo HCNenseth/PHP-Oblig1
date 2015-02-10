@@ -33,9 +33,9 @@
         
         
         <form action="test.php" method="post">
-            Name :</br>
+            Navn :</br>
             <input type="text" name="name_id" /></br>
-            Phonenumber :</br>
+            Telefonnummer:</br>
             <input type="text" name="phone" /></br>
             e-mail :</br>
             <input type="text" name="phone" /></br>
