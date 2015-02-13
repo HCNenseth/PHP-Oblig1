@@ -7,7 +7,7 @@
     </head>
     <body>
         <h3>Oppgave 3</h3>
-        
+
         <p>Bestilling av billetter på nettet.
             Vi ser på en liten del av et system som lar en bruker bestille billetter på nettet. Dette kan
             f.eks være kinobilletter. Det skal brukes en objektmodell for å løse oppgaven.</br>
@@ -27,12 +27,24 @@
             ha alle nødvendige attributter og metoder (funksjoner) for å kunne motta dataene fra
             skjema, sende e-post og lagre bestillingen på fil.</br>
         </p>
-        
+
         <h2>Konsertbestillinger</h2>
-        
-        
-        
-        <form action="test.php" method="post">
+
+
+        <form action="" metod="POST">
+            Konsertdatoer:</br>
+            <select size="l" name="dato">
+                <option>1.Mai</option>
+                <option>5.Mai</option>
+            </select></br>
+            Aktueller konserter:</br>
+            <select size="l" name="konsert">
+                <option>Beatles - Reunion</option>
+                <option>Queen - Alive</option>
+            </select></br>
+        </form>
+
+        <form action="Konserter.php" method="post">
             Navn :</br>
             <input type="text" name="name_id" /></br>
             Telefonnummer:</br>
@@ -40,12 +52,10 @@
             e-mail :</br>
             <input type="text" name="phone" /></br>
             <input type="submit" value="Register" name="button" />
-            
+
         </form>
-        
+
         <?php
-        
-        
         ?>
     </body>
 </html>
