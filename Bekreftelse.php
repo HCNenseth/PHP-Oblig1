@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
     <head>
         <meta charset="UTF-8">
@@ -11,16 +7,46 @@ and open the template in the editor.
     </head>
     <body>
 
-
-        <form action="" metod="POST">
-            Konsertdatoer:</br>
-            <select size="l" name="dato ">
-                <option>1.Mai</option>
-                <option>5.Mai</option>
-            </select></br>
-        </form>
-        
         <?php
+        
+        class Kunde {
+
+            public $navn;
+
+            function tilStreng() {
+                $navn = $_POST["name_id"];
+                $tlf = $_POST["phone"];
+                $epost= $_POST["email"];
+                return $person = date("Y-m-d H:i:s")."</br>".$navn."</br>".$tlf."</br>".$epost;
+            }
+
+        }
+
+        class Bestilling {
+            
+            public $dato;
+            public $Konsert;
+            
+            function tilStreng() {
+                $dt = $_POST["dato"];
+                $kon = $_POST["konsert"];
+                return $person = $dt."</br>".$kon."</br>";
+            }
+            
+        }
+        
+        
+        class tilFil {
+            
+        }
+        
+        $Pers = new Kunde();
+        $Best = new Bestilling();
+        
+        echo $Pers->tilStreng();
+        echo "</br>";
+        echo $Best->tilStreng();
+        
         ?>
     </body>
 </html>

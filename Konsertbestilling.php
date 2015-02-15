@@ -31,29 +31,33 @@
         <h2>Konsertbestillinger</h2>
 
 
-        <form action="" metod="POST">
+        <form action="Bekreftelse.php" method="POST">
+            
             Konsertdatoer:</br>
             <select size="l" name="dato">
                 <option>Velg dato</option>
                 <option>1.Mai</option>
                 <option>5.Mai</option>
+                <option>17.Mai</option>
             </select></br>
+            
             Aktueller konserter:</br>
             <select size="l" name="konsert">
                 <option>Velg konsert</option>
                 <option>Beatles - Reunion</option>
                 <option>Queen - Alive</option>
+                <option>Aha - Do_Over</option>
             </select></br>
-            <input type="submit" value="Register" name="reg" />
-        </form>
-        </br>
-        <form action="Bekreftelse.php" method="post">
+            
+            </br>
+            </br>
+            
             Navn :</br>
             <input type="text" name="name_id" /></br>
             Telefonnummer:</br>
             <input type="text" name="phone" /></br>
             e-mail :</br>
-            <input type="text" name="phone" /></br>
+            <input type="text" name="email" /></br>
             <input type="submit" value="Register" name="button" />
 
         </form>
