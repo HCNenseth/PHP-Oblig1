@@ -22,8 +22,8 @@
         ?>
 
         </br>
-
-        <form action="" method="POST">
+            
+        <form action="Epost_Sendt.php" method="POST">
             Stemmer bestillingen? 
             <input type="checkbox" name="bekreftelse"/>
             <input type="submit" value="Bekreft bestilling/Avbekrefte bestilling" name="button" />
