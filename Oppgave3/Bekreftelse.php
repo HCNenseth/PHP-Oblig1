@@ -30,7 +30,7 @@
             <input type="checkbox" name="bekreftelse"/>
             <input type="submit" value="Bekreft bestilling" name="button" />
         </form>
-        <a href="Konsertbestilling.php">Forandre på bestilling</a>
+        <a href="index.php">Forandre på bestilling</a>
 
         <?php
         if (isset($_POST["bekreftelse"])) {
