@@ -2,29 +2,50 @@
 
 class Kunde {
 
-            public $navn;
+    public $navn;
 
-            function tilStreng() {
-                $navn = $_POST["name_id"];
-                $tlf = $_POST["phone"];
-                $epost = $_POST["email"];
-                return $person = "</br>" . date("Y-m-d H:i:s") . "</br>" . $navn . "</br>" . $tlf . "</br>" . $epost;
-            }
-        }
+    function tilStreng() {
+        $navn = $_POST["name_id"];
+        $tlf = $_POST["phone"];
+        $epost = $_POST["email"];
+        return $person = "</br>" . date("Y-m-d H:i:s") . "</br>" . $navn . "</br>" . $tlf . "</br>" . $epost;
+    }
 
-        class Bestilling {
+}
 
-            public $dato;
-            public $Konsert;
+class Bestilling {
 
-            function tilStreng() {
-                $dt = $_POST["dato"];
-                $kon = $_POST["konsert"];
-                return $person = "</br>" . $dt . "</br>" . $kon . "</br>";
-            }
-        }
+    public $dato;
+    public $Konsert;
 
-        class tilFil {
-            
-        }
+    function tilStreng() {
+        $dt = $_POST["dato"];
+        $kon = $_POST["konsert"];
+        return $person = "</br>" . $dt . "</br>" . $kon . "</br>";
+    }
 
+}
+
+class tilFil {
+
+    public $Pers;
+    public $Kons;
+
+    function __construct($P, $K) {
+        $this->Pers = $P;
+        $this->Kons = $K;
+    }
+
+    function tilFil() {
+        $filref = fopen("temp/Bestilling.txt", "w");
+        fwrite($filref, $this->Pers . "</br>" . $this->Kons);
+        fclose($filref);
+    }
+
+}
+
+
+class sendeEpost {
+    
+    
+}
