@@ -53,11 +53,11 @@
             </br>
             
             Navn :</br>
-            <input type="text" name="name_id" /></br>
+            <input type="text" name="name_id" required/></br>
             Telefonnummer:</br>
-            <input type="text" name="phone" /></br>
+            <input type="text" name="phone" required/></br>
             e-mail :</br>
-            <input type="text" name="email" /></br>
+            <input type="text" name="email" required/></br>
             <input type="submit" value="Register" name="button" />
 
         </form>

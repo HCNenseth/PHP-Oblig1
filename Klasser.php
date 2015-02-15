@@ -37,15 +37,7 @@ class tilFil {
     }
 
     function tilFil() {
-        $filref = fopen("temp/Bestilling.txt", "w");
-        fwrite($filref, $this->Pers . "</br>" . $this->Kons);
-        fclose($filref);
+        
     }
 
-}
-
-
-class sendeEpost {
-    
-    
 }

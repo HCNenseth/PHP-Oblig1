@@ -13,30 +13,35 @@
         $Pers = new Kunde();
         $Best = new Bestilling();
 
+
         $Persinfo = $Pers->tilStreng();
         $Konsertinfo = $Best->tilStreng();
-        $info = $Persinfo."</br>".$Konsertinfo;
+        $info = $Persinfo . "</br>" . $Konsertinfo;
+        $send = $_POST["email"];
 
         echo "Følgende valg er gjort :</br>";
         echo $info;
         ?>
 
         </br>
-            
-        <form action="Epost_Sendt.php" method="POST">
+
+        <form action="" method="POST">
             Stemmer bestillingen? 
             <input type="checkbox" name="bekreftelse"/>
-            <input type="submit" value="Bekreft bestilling/Avbekrefte bestilling" name="button" />
+            <input type="submit" value="Bekreft bestilling" name="button" />
         </form>
+        <a href="Konsertbestilling.php">Forandre på bestilling</a>
 
         <?php
         if (isset($_POST["bekreftelse"])) {
-            mail($_POST["email"],"Bekreftelse av Konsertbestilling",$info);
-            //$fil = new tilFil($Persinfo,$Konsertinfo);
-    }
-//         else {
-//            Konsertbestilling . php;
-//        }
+            mail($send, "Bekreftelse av Konsertbestilling", $info);
+            echo "</br>Bekreftelsesmail er sendt.";
+            $filref = fopen("Bestilling.txt", "w");
+            fwrite($filref, $info);
+            fclose($filref);
+        } else {
+            
+        }
         ?>
 
     </body>
